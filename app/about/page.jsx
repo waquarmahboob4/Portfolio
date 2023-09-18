@@ -5,6 +5,9 @@ import AnimatedNumbers from "../components/AnimatedNumbers/AnimatedNumbers";
 import Layouts from "../components/Layout/Layouts";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Skills from "../components/Skills/Skills";
+import Experience from "../components/Experience/Experience";
+import Education from "../components/Education/Education";
+
 
 export const metadata = {
   title: " Waquar Mahboob | About Page",
@@ -63,13 +66,15 @@ const page = () => {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={4}/>+
+                  <AnimatedNumbers value={2}/>+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">years of experience</h2>
               </div>
             </div>
           </div>
           <Skills/>
+          <Experience/>
+          <Education/>
         </Layouts>
       </main>
     </>

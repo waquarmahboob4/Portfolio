@@ -21,7 +21,6 @@ const AnimatedNumbers = ({value}) => {
         if(ref.current && latest.toFixed(0) <= value){
             ref.current.textContent = latest.toFixed(0);
         }
-        console.log(latest)
       })
     }, [springValue,value])
     
