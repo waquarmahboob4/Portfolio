@@ -4,15 +4,15 @@ import Logo from "../Logo/Logo";
 import CustomLink from "./CustomLink";
 import { GithubIcon, LinkedInIcon, Hackerrank } from "../Icons/Icons";
 import CustomIcon from "./CustomIcon";
+import ThemeSwitchBtn from "./ThemeSwitchBtn"
 
 const Navbar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
-        <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
@@ -33,6 +33,7 @@ const Navbar = () => {
         >
           <Hackerrank />
         </CustomIcon>
+        <ThemeSwitchBtn/>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">

@@ -11,7 +11,7 @@ const CustomLink = ({href,title,className=""})=>{
         absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300
         ${pathname=== href ? 'w-full':'w-0'}
-        `}>
+        dark:bg-light`}>
           &nbsp;
         </span>
       </Link>

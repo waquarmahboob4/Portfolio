@@ -17,7 +17,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center ">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layouts className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
@@ -52,23 +52,23 @@ const page = () => {
               <Image src={profilePic} alt="Waquar Mahboob" className="w-full h-auto rounded-2xl" />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
-            <div className="flex flex-col items-end justify-center">
+            {/* <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={50}/>+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">satisfied clients</h2>
-              </div>
+              </div> */}
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                <AnimatedNumbers value={40}/>+
+                <AnimatedNumbers value={4}/>+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">projects completed</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">projects completed</h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={2}/>+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">years of experience</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">years of experience</h2>
               </div>
             </div>
           </div>

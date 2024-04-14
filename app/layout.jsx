@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 
@@ -18,7 +19,14 @@ export default function RootLayout({ children }) {
       <meta name="viewport" content="width=device-width,initial-scale=1"/>
       <link rel="icon" href="./favicon.ico"/>
       </Head>
-      <body className={`${montserrat.className} font-mont bg-white w-full min-h-screen`}>
+      <body className={`${montserrat.className} font-mont bg-white dark:bg-dark w-full min-h-screen`}>
+        <Script id="theme-switcher" strategy='beforeInteractive'>
+          {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}`}
+        </Script>
         <Navbar/>
         {children}
         <Footer/>
