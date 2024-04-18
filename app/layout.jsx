@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
-import Script from 'next/script'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import DarkThemeScript from './components/Script/DarkThemeScript'
 
 const montserrat = Montserrat({ subsets: ['latin'] ,
 variable:"--font-mont"})
@@ -17,16 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
       <meta name="viewport" content="width=device-width,initial-scale=1"/>
-      <link rel="icon" href="./favicon.ico"/>
+      <link rel="icon" href="./favicon.ico"/> 
       </Head>
       <body className={`${montserrat.className} font-mont bg-white dark:bg-dark w-full min-h-screen`}>
-        <Script id="theme-switcher" strategy='beforeInteractive'>
-          {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
-} else {
-  document.documentElement.classList.remove('dark')
-}`}
-        </Script>
+      <DarkThemeScript/>
         <Navbar/>
         {children}
         <Footer/>
