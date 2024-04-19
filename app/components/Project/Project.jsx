@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
+import AnimatedImages from '../AnimatedImages/AnimatedImages'
 import { GithubIcon } from '../Icons/Icons'
 
 const Project = ({type,title,img,link,github}) => {
@@ -9,7 +10,7 @@ const Project = ({type,title,img,link,github}) => {
         <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl"></div>
         <Link href={link} target='_blank' 
         className='w-full cursor-pointer overflow-hidden rounded-lg '>
-            <Image src={img} alt={title} className='w-full h-auto' loading="lazy" blurDataURL={img}/>
+            <AnimatedImages src={img} alt={title} className='w-full h-auto' whileHover={{scale:1.05}} transition={{duration:0.2}}/>
         </Link>
         <div className='w-full flex flex-col items-start justify-between mt-4'>
             <span className='text-primary dark:text-primaryDark font-medium text-xl'>
