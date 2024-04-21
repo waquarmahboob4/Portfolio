@@ -1,5 +1,6 @@
 'use client'
-import {motion} from "framer-motion"
+import {motion} from "framer-motion";
+import {skills} from "../../../constant";
 
 
 const Skill=({name,x,y})=>{
@@ -22,10 +23,10 @@ const Skills = () => {
   return (
     <>
         <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">
-            Skills
+            {skills.heading}
         </h2>
         <div className="w-full h-screen relative flex items-center  justify-center rounded-full bg-circularLight dark:bg-circularDark
-        lg:h-[80vh] sm:h-[60vh] xs:[50vh] 
+        lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
         lg:bg-circularLightLg lg:dark:bg-circularDarkLg
         md:bg-circularLightMd md:dark:bg-circularDarkMd
         sm:bg-circularLightSm sm:dark:bg-circularDarkSm
@@ -35,18 +36,9 @@ const Skills = () => {
             whileHover={{scale:1.05}}
             
             >
-                Web
+                {skills.sun}
             </motion.div>
-            <Skill name="HTML" x="-20vw" y="2vw"/>
-            <Skill name="CSS" x="-5vw" y="-10vw"/>
-            <Skill name="Javascript" x="20vw" y="6vw"/>
-            <Skill name="React JS" x="0vw" y="12vw"/>
-            <Skill name="Electron JS" x="15vw" y="-12vw"/>
-            <Skill name="Next JS" x="-20vw" y="-15vw"/>
-            <Skill name="Node JS" x="0vw" y="-20vw"/>
-            <Skill name="Nest JS" x="32vw" y="-5vw"/>
-            <Skill name="Python" x="-25vw" y="18vw"/>
-            <Skill name="Tailwind CSS" x="18vw" y="18vw"/>
+            {skills?.planets?.map((skill,index)=>(<Skill key={index} name={skill.name} x={skill.x} y={skill.y}/>))}
         </div>
       
     </>

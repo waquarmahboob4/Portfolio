@@ -26,11 +26,12 @@ const Details =({position,company,companyLink,time,address,work})=>{
         </motion.div>
     </li>
 }
-const AnimateExperienceLine = () => {
+const AnimateExperienceLine = ({data}) => {
     const ref=useRef(null)
     const {scrollYProgress}=useScroll({
         target:ref,
-        offset:["start end","center start"]
+        offset:["start end","center start"],
+        layoutEffect: false
     })
   return (
     <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
@@ -39,48 +40,17 @@ const AnimateExperienceLine = () => {
         className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
         md:w-[2px] md:left-[30px] xs:left-[20px]"/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                <Details
-                position="JUNIOR SOFTWARE DEVELOPER"
-                company= "SOFYRUS TECHNOLOGIES"
-                companyLink="https://sofyrus.com/"
-                time="FEBRUARY 2020 - SEPTEMBER 2022"
-                address="Aligarh, UP"
-                work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization.'
-                Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                {data?.map((info,index)=>(<Details
+                key={index}
+                position={info.position}
+                company= {info.company}
+                companyLink={info.companyLink}
+                time={info.time}
+                address={info.address}
+                work={info.work}
                 
-                />
-                <Details
-                position="Tech Internship"
-                company= "EazyDiner Private Limited"
-                companyLink="https://eazydiner.vercel.app/"
-                time="JANUARY 2023 - JULY 2023"
-                address="Gurugram Haryana, UP"
-                work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization.'
-                Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                />))}
                 
-                />
-                <Details
-                position="Software Developer"
-                company= "EazyDiner Private Limited"
-                companyLink="https://eazydiner.vercel.app/"
-                time="JULY 2023-Present"
-                address="Gurugram Haryana, UP"
-                work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization.'
-                Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                
-                />
             </ul>
         </div>
   )

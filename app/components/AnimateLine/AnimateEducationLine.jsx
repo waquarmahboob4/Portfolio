@@ -25,11 +25,12 @@ const Details = ({ type, place, info, time, address, work }) => {
     </li>
   );
 };
-const AnimateEducationLine = () => {
+const AnimateEducationLine = ({data}) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
+    layoutEffect: false
   });
   return (
     <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
@@ -39,20 +40,13 @@ const AnimateEducationLine = () => {
         md:w-[2px] md:left-[30px] xs:left-[20px]"
       />
       <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-        <Details
-          type="BACHELOR OF SCIENCE IN COMPUTER APPLICATION"
-          time="2018-2021"
-          place="ALIGARH MUSLIM UNIVERSITY"
-          info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
-        />
-        <Details
-          type="MASTER IN COMPUTER SCIENCE AND APPLICATION"
-          time="2021-2023"
-          place="ALIGARH MUSLIM UNIVERSITY"
-          info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
-        />
+        {data?.map((info,index)=>(<Details
+        key={index}
+          type={info.type}
+          time={info.time}
+          place={info.place}
+          info={info.info}
+        />))}
       </ul>
     </div>
   );
