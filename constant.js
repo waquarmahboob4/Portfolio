@@ -96,10 +96,10 @@ export const education = {
               title: "EazyDiner",
               skills: "Next JS",
               summary: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, andcarousel without using any libraries.",
-              link: "https://eazydiner.vercel.app/",
+              link: "/",
               type: "Featured Project",
               img: {eazydiner},
-              github: "https://eazydiner.vercel.app/"
+              github: "/"
           },
           {
               title: "ROBONITO",
