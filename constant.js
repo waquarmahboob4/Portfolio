@@ -99,7 +99,7 @@ export const education = {
               link: "/",
               type: "Featured Project",
               img: {eazydiner},
-              github: "/"
+              github: "/projects"
           },
           {
               title: "ROBONITO",
