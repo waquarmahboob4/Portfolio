@@ -48,21 +48,21 @@ export const experience = {
     {
       position: "SOFTWARE DEVELOPMENT ENGINEER",
       company: "EazyDiner Private Limited",
-      companyLink: "https://new-react-test.easydiner.com",
-      time: "JJULY 2023 – Present",
+      companyLink: "https://www.eazydiner.com/",
+      time: "JANUARY 2023 – Present",
       address: "Gurugram, Haryana UP, India",
       work: "EazyDiner is a restaurant aggregator & table reservation. Involved in the migration of EazyDiner's website to Next.js with a focus on optimizing its performance. Involved in the development of both the website and mobile site (msite) to improve the overall user experience.",
     },
+    // {
+    //   position: "TECH INTERNSHIP | FRONT-END DEVELOPER",
+    //   company: "EazyDiner Private Limited",
+    //   companyLink: "https://new-react-test.easydiner.com",
+    //   time: "JANUARY 2023 – JULY 2023",
+    //   address: "Gurugram, Haryana UP, India",
+    //   work: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, and carousel without using any libraries.I created a helper function that detected that we had reached the bottom of the page. We use this function in different components, so when we reach the bottom, we can change the state. ",
+    // },
     {
-      position: "TECH INTERNSHIP | FRONT-END DEVELOPER",
-      company: "EazyDiner Private Limited",
-      companyLink: "https://new-react-test.easydiner.com",
-      time: "JANUARY 2023 – JULY 2023",
-      address: "Gurugram, Haryana UP, India",
-      work: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, and carousel without using any libraries.I created a helper function that detected that we had reached the bottom of the page. We use this function in different components, so when we reach the bottom, we can change the state. ",
-    },
-    {
-      position: "PART-TIME |JUNIOR SOFTWARE DEVELOPER",
+      position: "SOFTWARE DEVELOPMENT ENGINEER",
       company: "SOFYRUS TECHNOLOGIES",
       companyLink: "https://sofyrus.com/",
       time: "FEBRUARY 2020 – SEPTEMBER 2022",
@@ -96,10 +96,10 @@ export const education = {
               title: "EazyDiner",
               skills: "Next JS",
               summary: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, andcarousel without using any libraries.",
-              link: "/",
+              link: "https://www.eazydiner.com/",
               type: "Featured Project",
               img: {eazydiner},
-              github: "/projects"
+              github: "https://www.eazydiner.com/"
           },
           {
               title: "ROBONITO",
@@ -124,20 +124,7 @@ export const education = {
               img: {ezyform},
               github: "https://github.com/aslamsofyrus/ezf.git"
           },
-          {
-              title: "Quiz",
-              link: "https://github.com/waquarmahboob4/Quiz_EazyDiner",
-              type: "Project",
-              img: {quiz},
-              github: "https://github.com/waquarmahboob4/Quiz_EazyDiner"
-          },
-          {
-              title: "To-Do",
-              link: "https://github.com/waquarmahboob4/to-do_EazyDiner",
-              type: "Project",
-              img: {toDo},
-              github: "https://github.com/waquarmahboob4/to-do_EazyDiner"
-          }
+         
       ]
   
   }
