@@ -1,6 +1,7 @@
 import ezyform from "./public/images/projects/ezyform.png";
 import toDo from "./public/images/projects/toDo.png";
 import eazydiner from "./public/images/projects/eazydiner.png";
+import eazydinerfinance from "./public/images/projects/eazydinerfinance.png";
 import robonito from "./public/images/projects/robonito.png";
 import quiz from "./public/images/projects/quiz.png";
 
@@ -102,6 +103,13 @@ export const education = {
               github: "https://www.eazydiner.com/"
           },
           {
+              title: "Eazydiner Finance Platform",
+              link: "#",
+              type: "Project",
+              img: {eazydinerfinance},
+              github: "#"
+          },
+          {
               title: "ROBONITO",
               link: "https://www.robonito.com/",
               type: "Project",
@@ -109,21 +117,22 @@ export const education = {
               github: "https://www.robonito.com/"
           },
           {
+            title: "EZYFORMS",
+            skills: "Electron JS, RPA, Robot Framework",
+            summary: "Automate the filling of web forms and pdf forms from the data source (excel file). My role was to map the path of web form fields from the data source. Automate the filling of PDF forms and generate the filled PDF using the PDFLIB library.",
+            link: "https://github.com/aslamsofyrus/ezf.git",
+            type: "Featured Project",
+            img: {ezyform},
+            github: "https://github.com/aslamsofyrus/ezf.git"
+        },
+          {
               title: "ROBONITO CHROME EXTENSION",
               link: "https://www.robonito.com/",
               type: "Project",
               img: {robonito},
               github: "https://www.robonito.com/"
-          },
-          {
-              title: "EZYFORMS",
-              skills: "Electron JS, RPA, Robot Framework",
-              summary: "Automate the filling of web forms and pdf forms from the data source (excel file). My role was to map the path of web form fields from the data source. Automate the filling of PDF forms and generate the filled PDF using the PDFLIB library.",
-              link: "https://github.com/aslamsofyrus/ezf.git",
-              type: "Featured Project",
-              img: {ezyform},
-              github: "https://github.com/aslamsofyrus/ezf.git"
-          },
+          }
+          
          
       ]
   
