@@ -1,44 +1,44 @@
 import ezyform from "./public/images/projects/ezyform.png";
-import toDo from "./public/images/projects/toDo.png";
 import eazydiner from "./public/images/projects/eazydiner.png";
 import eazydinerfinance from "./public/images/projects/eazydinerfinance.png";
 import robonito from "./public/images/projects/robonito.png";
-import quiz from "./public/images/projects/quiz.png";
 
 export const home = {
-  text: "As a skilled front-end developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in React.js and web development.",
+  text: "Front-End Developer with 2+ years of experience in React.js and Next.js. Skilled in Docker and Husky. I build fast, responsive web apps that turn ideas into seamless user experiences.",
   resume: "Resume",
   contact: "Contact",
-  animatedText: "Turning Vision Into Reality With Code And Design.",
+  animatedText: "From Vision to UI Code That Performs and Inspires.",
 };
 
 export const about = {
   heading: "Biography",
   text1:
-    "Hi, I'm Waquar Mahboob, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With 3+ years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
+    "Hi, I'm Waquar Mahboob, a Front-End Developer with 2+ years of experience building fast, scalable, and modern web applications. I specialize in React.js, Next.js, and TypeScript, with a strong eye for performance optimization and UI/UX excellence.",
   text2:
-    "I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
+    "I led the frontend revamp of EazyDiner’s main platform using Next.js, significantly boosting performance, SEO, and user engagement through code-splitting, layout optimization, and server-side rendering. I also independently developed the Finance Platform’s frontend using React 19, TanStack Query, TanStack Table, Shadcn UI, and Tailwind CSS — implementing server-side filtering, sorting, and pagination to handle complex, real-time financial data with precision.",
   text3:
-    "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
+    "Beyond development, I ensured clean code and efficient workflows by setting up commitlint for Conventional Commits, enforcing strict Husky pre-commit checks (format, lint, test, build) using Nx, and containerizing the frontend with Docker within a monorepo setup. My approach blends technical depth with user-first thinking to deliver high-quality, maintainable solutions.",
   experienceText: "years of experience",
   projectstext: "projects completed",
   skillsText: "skills mastered",
-  animatedText: "Passion Fuels Purpose!",
+  animatedText: "Code. Optimize. Deliver — With Precision and Purpose.",
 };
 
 export const skills = {
   heading: "Skills",
   sun: "Web",
   planets: [
-    { name: "HTML", x: "-20vw", y: "2vw" },
-    { name: "CSS", x: "-5vw", y: "-10vw" },
+    { name: "Docker", x: "-20vw", y: "2vw" },
+    { name: "Husky", x: "-5vw", y: "-10vw" },
+    { name: "Git", x: "15vw", y: "0vw" },
     { name: "Javascript", x: "20vw", y: "6vw" },
     { name: "React JS", x: "0vw", y: "12vw" },
-    { name: "Electron JS", x: "15vw", y: "-12vw" },
+    { name: "TypeScript", x: "15vw", y: "-12vw" },
     { name: "Next JS", x: "-20vw", y: "-15vw" },
-    { name: "Node JS", x: "0vw", y: "-20vw" },
-    { name: "Nest JS", x: "32vw", y: "-5vw" },
-    { name: "Python", x: "-25vw", y: "18vw" },
+    { name: "Jest & RTL", x: "0vw", y: "-20vw" },
+    { name: "React Query (TanStack Query)", x: "32vw", y: "-5vw" },
+    { name: "TanStack Table", x: "-32vw", y: "-5vw" },
+    { name: "Zustand", x: "-25vw", y: "18vw" },
     { name: "Tailwind CSS", x: "18vw", y: "18vw" },
   ],
 };
@@ -91,7 +91,7 @@ export const education = {
   };
 
   export const projects =  {
-    animatedText:"Imagination Trumps Knowledge!",
+    animatedText:"Building Real Solutions with Code and Creativity!",
       data:[
           {
               title: "EazyDiner",
