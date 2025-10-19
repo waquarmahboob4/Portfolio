@@ -2,6 +2,7 @@ import ezyform from "./public/images/projects/ezyform.png";
 import eazydiner from "./public/images/projects/eazydiner.png";
 import eazydinerfinance from "./public/images/projects/eazydinerfinance.png";
 import robonito from "./public/images/projects/robonito.png";
+import culinaire from "./public/images/projects/theculinaire.png";
 
 export const home = {
   text: "Front-End Developer with 2+ years of experience in React.js and Next.js. Skilled in Docker and Husky. I build fast, responsive web apps that turn ideas into seamless user experiences.",
@@ -96,7 +97,7 @@ export const education = {
           {
               title: "EazyDiner",
               skills: "Next JS",
-              summary: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, andcarousel without using any libraries.",
+              summary: "EazyDiner is a restaurant aggregator & table reservation.My role is to create custom components like accordion, dropdown, and carousel without using any libraries.",
               link: "https://www.eazydiner.com/",
               type: "Featured Project",
               img: {eazydiner},
@@ -117,11 +118,18 @@ export const education = {
               github: "https://www.robonito.com/"
           },
           {
+              title: "Culinaire",
+              skills: "Next JS",
+              summary: "The Culinaire (EazyDiner × HSBC) is an exclusive dining platform for HSBC members. I led the frontend team, built custom reusable Next.js components, improved Core Web Vitals, and ensured a seamless, high-performance user experience across devices.",
+              link: "https://www.theculinaire.in/",
+              type: "Featured Project",
+              img: {culinaire},
+              github: "https://www.theculinaire.in/"
+          },
+          {
             title: "EZYFORMS",
-            skills: "Electron JS, RPA, Robot Framework",
-            summary: "Automate the filling of web forms and pdf forms from the data source (excel file). My role was to map the path of web form fields from the data source. Automate the filling of PDF forms and generate the filled PDF using the PDFLIB library.",
             link: "https://github.com/aslamsofyrus/ezf.git",
-            type: "Featured Project",
+            type: "Project",
             img: {ezyform},
             github: "https://github.com/aslamsofyrus/ezf.git"
         },
