@@ -18,7 +18,7 @@ const page = () => {
         <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
           {projects?.data?.map((elem, ind) =>
             elem.type == "Featured Project" ? (
-              <div className="col-span-12">
+              <div className="col-span-12" key={ind}>
                 <FeaturedProject
                   key={ind}
                   title={elem.title}
@@ -31,7 +31,7 @@ const page = () => {
                 />
               </div>
             ) : (
-              <div className="col-span-6 sm:col-span-12">
+              <div className="col-span-6 sm:col-span-12" key={ind}>
                 <Project
                 key={ind}
                   title={elem.title}
